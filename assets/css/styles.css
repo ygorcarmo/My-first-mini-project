@@ -79,7 +79,7 @@ img {
     width: 500px;
     padding: 10px;
     border: 5px solid #DDAF94;
-    border-radius: 20px;
+    border-radius: 20px;    
   }
   
   label {
@@ -118,6 +118,7 @@ img {
   section, form{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   img{
     max-width: 90%;
@@ -126,6 +127,9 @@ img {
   form{
     max-width: 70%;
     height: auto;
+  }
+  form ul{
+    margin: 20px;
   }
         
   }
