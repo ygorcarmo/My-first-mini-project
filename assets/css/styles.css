@@ -11,6 +11,7 @@ body {
   background-color: white;
   color: #4F4846;
   position: relative;
+  justify-content: flex-start;
 }
 
 header, footer {
@@ -37,8 +38,7 @@ a {
   color: #FDF8F5;
 }
 
-img {
-  display: block;
+img {  
   background-color: white;
   /* TODO: Add a margin property */
   margin: 5px auto;
@@ -46,6 +46,7 @@ img {
   padding: 5px;
   /* TODO: Add a border property */
   border: 9px solid blue;
+  display: flex;
   }
 
   header {
@@ -78,7 +79,7 @@ img {
     width: 500px;
     padding: 10px;
     border: 5px solid #DDAF94;
-    border-radius: 20px;
+    border-radius: 20px;    
   }
   
   label {
@@ -113,4 +114,12 @@ img {
   .text-right {
     text-align: right;
   }
-  
+  @media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }   
+    form {
+      display: flex;
+      flex-direction: column;
+    }  
+  }
