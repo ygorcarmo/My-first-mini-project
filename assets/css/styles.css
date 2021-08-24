@@ -11,7 +11,6 @@ body {
   background-color: white;
   color: #4F4846;
   position: relative;
-  justify-content: flex-start;
 }
 
 header, footer {
@@ -38,7 +37,8 @@ a {
   color: #FDF8F5;
 }
 
-img {  
+img {
+  display: block;
   background-color: white;
   /* TODO: Add a margin property */
   margin: 5px auto;
@@ -79,7 +79,7 @@ img {
     width: 500px;
     padding: 10px;
     border: 5px solid #DDAF94;
-    border-radius: 20px;    
+    border-radius: 20px;
   }
   
   label {
@@ -90,7 +90,7 @@ img {
   input, 
   textarea {
     box-sizing: border-box;
-    width: 300px;
+    width: 70%;
     border: 1px solid #4F4846;
   }
   
@@ -115,11 +115,17 @@ img {
     text-align: right;
   }
   @media screen and (max-width: 768px) {
-    header, main {
-      flex-direction: column;
-    }   
-    form {
-      display: flex;
-      flex-direction: column;
-    }  
+  section, form{
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    max-width: 90%;
+    height: auto;
+  }
+  form{
+    max-width: 70%;
+    height: auto;
+  }
+        
   }
